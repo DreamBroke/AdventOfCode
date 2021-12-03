@@ -4,12 +4,13 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Test3 {
 
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner textFile = new Scanner(new File(Test1.class.getClassLoader().getResource("question3.txt").getFile()));
+        Scanner textFile = new Scanner(new File(Objects.requireNonNull(Test1.class.getClassLoader().getResource("question3.txt")).getFile()));
         List<String> strArr = new ArrayList<>(1000);
         while (textFile.hasNextLine()) {
             String line = textFile.nextLine();

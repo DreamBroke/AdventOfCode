@@ -4,13 +4,14 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Scanner;
 import java.util.stream.IntStream;
 
 public class Test1 {
 
     public static void main(String[] args) throws IOException {
-        Scanner textFile = new Scanner(new File(Test1.class.getClassLoader().getResource("question1.txt").getFile()));
+        Scanner textFile = new Scanner(new File(Objects.requireNonNull(Test1.class.getClassLoader().getResource("question1.txt")).getFile()));
         List<String> strArr = new ArrayList<>(2000);
         while (textFile.hasNextLine()) {
             String line = textFile.nextLine();
