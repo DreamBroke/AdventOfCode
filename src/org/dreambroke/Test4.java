@@ -8,7 +8,7 @@ import java.util.stream.IntStream;
 public class Test4 {
 
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner textFile = new Scanner(new File(Objects.requireNonNull(Test1.class.getClassLoader().getResource("question4.txt")).getFile()));
+        Scanner textFile = new Scanner(new File(Objects.requireNonNull(Test4.class.getClassLoader().getResource("question4.txt")).getFile()));
         List<int[][]> boardList = new ArrayList<>(100);
         String markInputLine = textFile.nextLine();
         while (textFile.hasNextLine()) {
