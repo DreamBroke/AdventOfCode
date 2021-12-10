@@ -4,13 +4,9 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
 
-public class Test7 {
-
-    private static final Map<Integer, Integer> listSizeMap = new HashMap<>();
-    private static final Map<Integer, List<Integer>> loopListMap = new HashMap<>();
-
+public class Test07 {
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner textFile = new Scanner(new File(Objects.requireNonNull(Test7.class.getClassLoader().getResource("question7.txt")).getFile()));
+        Scanner textFile = new Scanner(new File(Objects.requireNonNull(Test07.class.getClassLoader().getResource("question07.txt")).getFile()));
         String line = textFile.nextLine();
         long start = System.currentTimeMillis();
         int[] inputArr = Arrays.stream(line.split(",")).mapToInt(Integer::parseInt).toArray();

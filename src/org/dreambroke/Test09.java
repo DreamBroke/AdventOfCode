@@ -4,9 +4,9 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
 
-public class Test9 {
+public class Test09 {
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner textFile = new Scanner(new File(Objects.requireNonNull(Test9.class.getClassLoader().getResource("question9.txt")).getFile()));
+        Scanner textFile = new Scanner(new File(Objects.requireNonNull(Test09.class.getClassLoader().getResource("question09.txt")).getFile()));
         long start = System.currentTimeMillis();
         int[][] map = new int[100][100];
         int i = 0;

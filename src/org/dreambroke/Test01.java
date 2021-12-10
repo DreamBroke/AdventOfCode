@@ -8,10 +8,10 @@ import java.util.Objects;
 import java.util.Scanner;
 import java.util.stream.IntStream;
 
-public class Test1 {
+public class Test01 {
 
     public static void main(String[] args) throws IOException {
-        Scanner textFile = new Scanner(new File(Objects.requireNonNull(Test1.class.getClassLoader().getResource("question1.txt")).getFile()));
+        Scanner textFile = new Scanner(new File(Objects.requireNonNull(Test01.class.getClassLoader().getResource("question01.txt")).getFile()));
         List<String> strArr = new ArrayList<>(2000);
         while (textFile.hasNextLine()) {
             String line = textFile.nextLine();

@@ -4,12 +4,12 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
 
-public class Test8 {
+public class Test08 {
 
     private Map<Signal, Character> positionCharMap = new HashMap<>();
 
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner textFile = new Scanner(new File(Objects.requireNonNull(Test8.class.getClassLoader().getResource("question8.txt")).getFile()));
+        Scanner textFile = new Scanner(new File(Objects.requireNonNull(Test08.class.getClassLoader().getResource("question08.txt")).getFile()));
         List<List<String>> signalPatternsList = new ArrayList<>(200);
         List<List<String>> digitOutputList = new ArrayList<>(200);
         List<String> allDigitOutput = new ArrayList<>(800);
@@ -24,7 +24,7 @@ public class Test8 {
             digitOutputList.add(digitOutput);
             allDigitOutput.addAll(digitOutput);
         }
-        Test8 main = new Test8();
+        Test08 main = new Test08();
 //        System.out.println(partA(allDigitOutput));
         long start = System.currentTimeMillis();
         System.out.println(main.partB(signalPatternsList, digitOutputList));

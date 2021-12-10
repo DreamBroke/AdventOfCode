@@ -7,10 +7,10 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Scanner;
 
-public class Test3 {
+public class Test03 {
 
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner textFile = new Scanner(new File(Objects.requireNonNull(Test3.class.getClassLoader().getResource("question3.txt")).getFile()));
+        Scanner textFile = new Scanner(new File(Objects.requireNonNull(Test03.class.getClassLoader().getResource("question03.txt")).getFile()));
         List<String> strArr = new ArrayList<>(1000);
         while (textFile.hasNextLine()) {
             String line = textFile.nextLine();

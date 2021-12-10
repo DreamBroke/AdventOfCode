@@ -5,10 +5,10 @@ import java.io.FileNotFoundException;
 import java.util.*;
 import java.util.stream.IntStream;
 
-public class Test4 {
+public class Test04 {
 
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner textFile = new Scanner(new File(Objects.requireNonNull(Test4.class.getClassLoader().getResource("question4.txt")).getFile()));
+        Scanner textFile = new Scanner(new File(Objects.requireNonNull(Test04.class.getClassLoader().getResource("question04.txt")).getFile()));
         List<int[][]> boardList = new ArrayList<>(100);
         String markInputLine = textFile.nextLine();
         while (textFile.hasNextLine()) {
