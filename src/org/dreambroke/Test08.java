@@ -17,10 +17,10 @@ public class Test08 {
             String line = textFile.nextLine();
             String[] singleInput = line.split("\\|");
             List<String> patterns = new ArrayList<>(10);
-            patterns.addAll(Arrays.stream(singleInput[0].split(" ")).filter(v -> !"".equals(v)).toList());
+            patterns.addAll(Arrays.stream(singleInput[0].split(" +")).toList());
             signalPatternsList.add(patterns);
             List<String> digitOutput = new ArrayList<>(10);
-            digitOutput.addAll(Arrays.stream(singleInput[1].split(" ")).filter(v -> !"".equals(v)).toList());
+            digitOutput.addAll(Arrays.stream(singleInput[1].split(" +")).toList());
             digitOutputList.add(digitOutput);
             allDigitOutput.addAll(digitOutput);
         }
